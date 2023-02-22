@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Major Mono Display";
+    src: url("../fonts/MajorMonoDisplay-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Operator Mono";
+    src: url("../fonts/OperatorMono-Book.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Operator Mono";
+    src: url("../fonts/OperatorMono-BookItalic.otf");
+    font-weight: normal;
+    font-style: italic;
+}

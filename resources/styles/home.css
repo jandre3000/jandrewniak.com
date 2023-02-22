@@ -1,0 +1,355 @@
+:root {
+    --content-width: 600px;
+    --content-height: 140vh;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    color:#353333;
+}
+
+#debug {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.matter-canvas {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+[data-matter-block] {
+    position: absolute;
+}
+
+#ground {
+    position: absolute;
+    /*outline: 1px solid red;*/
+    box-sizing: border-box;
+    width: var( --content-width);
+    height: var( --content-height);
+}
+
+.matter-reloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.reloader-visible .matter-reloader {
+    display: flex;
+}
+
+/*
+.heading {
+    position: fixed;
+    min-width: 680px;
+    outline: 1px solid;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+
+.heading {
+    margin: 0;
+    padding: 0;
+}
+.heading span {
+    display: block;
+    overflow: hidden;
+    will-change: transform;
+    font-family: "Major Mono Display";
+    font-size: 100px;
+    font-weight: 200;
+    line-height: 106px;
+    height: 95px;
+}
+
+:root {
+    --heading-line-1-y: 200px;
+    --heading-line-2-y: 300px;
+    --heading-line-3-y: 420px;
+    --heading-line-4-y: 470px;
+    --heading-line-5-y: 500px;
+}
+
+:root {
+    --heading-offset: 35vw; /*50vw*/
+}
+
+.heading .jan {
+    text-transform: uppercase;
+    transform:translate( calc( var(--heading-offset) + var(--n) ), var( --heading-line-1-y ) );
+}
+
+.heading .drewniak {
+    text-transform: uppercase;
+    transform:translate( calc( var(--heading-offset) + var(--n) ), var( --heading-line-2-y ) );
+}
+
+.heading .tagline {
+    font-family: "Operator Mono";
+    font-weight:200;
+    font-size: 24px;
+    height: 30px;
+    line-height: 1em;
+    transform:translate( calc(var(--heading-offset) + var(--n) ), var( --heading-line-3-y ) )
+}
+
+.heading .tagline.line-2, .heading .tagline.line-3 {
+    font-size: 18px;
+}
+
+.heading .tagline.line-2 {
+    font-style: italic;
+    transform:translate( calc(var(--heading-offset) + var(--n) ), var( --heading-line-4-y ) )
+}
+
+.heading .tagline.line-3 {
+    font-style: italic;
+    transform:translate( calc(var(--heading-offset) + var(--n) ), var( --heading-line-5-y ) )
+}
+
+.content {
+    transform: translate(0, 90vh);
+    width: var( --content-width);
+    height: var( --content-height);
+    margin: 0 auto;
+    font-family: "Operator Mono";
+    line-height: 1.7em;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+#portrait {
+    display: block;
+    background-image: url(../images/portriat.jpg);
+    background-size: 240%;
+    background-position: 48% 5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 15%;
+    shape-outside: circle(50%);
+    float: left;
+    margin: 10px;
+}
+
+.content--dark {
+    background: #353333;
+    color: white;
+    padding: 20px;
+}
+/*
+.content .content-padding {
+    padding: 20px;
+}
+*/
+
+.content p a {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg stroke='none' fill='none'%3E%3Cg stroke='%2300D3D5' stroke-width='1'%3E%3Cpath d='M0,13.8706934 C1.1045695,13.8706934 2,14.4353467 2,14.4353467 C2,14.4353467 2.8954305,15 4,15 C5.1045695,15 6,14.4353467 6,14.4353467 C6,14.4353467 6.8954305,13.8706934 8,13.8706934 C9.1045695,13.8706934 10,14.4353467 10,14.4353467 C10,14.4353467 10.8954305,15 12,15 C13.1045695,15 14,14.4353467 14,14.4353467 C14,14.4353467 14.8954305,13.8706934 16,13.8706934'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: bottom;
+    text-shadow: 0.05em 1px 0 white, -0.05em 1px 0 white;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+.content p a,
+.content p a:visited {
+    color: #bc4ea5;
+}
+
+.content p a:hover {
+    -webkit-animation-name: movebg;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    color: #01bfc2;
+
+}
+
+@-webkit-keyframes movebg {
+    0% {
+        background-position:  0 90%;
+    }
+    100% {
+        background-position:  100% 90%;
+    }
+}
+
+.content mark {
+    background-color: rgb(255 241 189);
+}
+
+#pronounce-button {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    background: none;
+}
+
+#pronounce-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-3px, 4px);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+}
+
+#pronounce-button:hover .play {
+    transform: translate(2px, -2px);
+}
+
+#pronounce-button:hover:after {
+    transform: translate(-3px, 4px);
+}
+
+#pronounce-indicator.play {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #333;
+    background: #ffe2e2 url(../images/Speaker_Icon.svg );
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: text-bottom;
+  }
+
+  #pronounce-indicator.pause {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #333;
+    transform: translate(2px, -2px);
+    background: #ffe2e2 url(../images/Pause_icon.svg );
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.wikipedia-icon {
+    background-image: url(../images/wikipedia-icon.svg);
+    background-size: 100%;
+    width: 1.3em;
+    height: 1.3em;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+}
+
+
+.starburst {
+    display: flex;
+    float: right;
+    width: 150px;
+    height: 150px;
+    font-size: 15px;
+    line-height: 1.3;
+    clip-path: polygon(100.00% 50.00%,94.67% 55.42%,98.55% 61.97%,92.08% 65.96%,94.27% 73.24%,87.03% 75.56%,87.43% 83.16%,79.84% 83.68%,78.40% 91.15%,70.91% 89.85%,67.73% 96.75%,60.77% 93.69%,56.03% 99.64%,50.00% 95.00%,43.97% 99.64%,39.23% 93.69%,32.27% 96.75%,29.09% 89.85%,21.60% 91.15%,20.16% 83.68%,12.57% 83.16%,12.97% 75.56%,5.73% 73.24%,7.92% 65.96%,1.45% 61.97%,5.33% 55.42%,0.00% 50.00%,5.33% 44.58%,1.45% 38.03%,7.92% 34.04%,5.73% 26.76%,12.97% 24.44%,12.57% 16.84%,20.16% 16.32%,21.60% 8.85%,29.09% 10.15%,32.27% 3.25%,39.23% 6.31%,43.97% 0.36%,50.00% 5.00%,56.03% 0.36%,60.77% 6.31%,67.73% 3.25%,70.91% 10.15%,78.40% 8.85%,79.84% 16.32%,87.43% 16.84%,87.03% 24.44%,94.27% 26.76%,92.08% 34.04%,98.55% 38.03%,94.67% 44.58%);
+    background-color: #333333;
+    align-items: center;
+    color: white;
+    padding: 3%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content .starburst a {
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    color: white;
+}
+
+.links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.links li {
+    padding: 1em;
+    text-transform: uppercase;
+    width: 100px;
+    height: 20px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li.link-linkedin {
+    background-color:#46b6cf;
+    transform: rotate(12deg);
+}
+
+.links li.link-resume {
+    background-color: #e78971;
+    transform: rotate(3deg);
+}
+
+.links li.link-github {
+    background-color: #7ad6a2;
+    transform: rotate(-5deg);
+}
+
+.links li:hover {
+    transform: rotate(0deg);
+    filter: brightness(100%);
+}
+
+.links li a,
+.links li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 680px) {
+    :root {
+        --content-width: 90vw;
+        --heading-offset: 30vw; /*50vw*/
+    }
+    #portrait {
+        margin-left: -10px;
+    }
+    .heading {
+        min-width: 100%;
+    }
+    .heading span {
+        font-size: 14vw;
+    }
+
+}
