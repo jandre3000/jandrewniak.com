@@ -1,5 +1,6 @@
 _site
 _drafts
+docs
 .jekyll-metadata
 .jekyll-cache
 Gemfile.lock

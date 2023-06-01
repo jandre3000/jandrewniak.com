@@ -2,6 +2,7 @@ title: Jan Drewniak
 description: UX Engineering
 repository: jandre3000/jandrewniak.com
 source: src
+destination: docs
 layouts_dir: templates
 plugins_dir: plugins
 includes_dir: templates/partials
