@@ -1,0 +1,74 @@
+{% include head.liquid styles="resume.css" %}
+
+    <h1 class="page-title">Jan <br/>Drewniak</h1>
+
+    <address id="page-address">
+        {{ page.address }}
+        {{ page.phone }}
+    </address>
+
+    <section id="page-summary">
+        <!-- {{ page.summary | markdownify}} -->
+    </section>
+
+    <section id="page-skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="page-skills-content">
+            {{ page.skills | markdownify}}
+        </div>
+    </section>
+
+    <section id="page-experience">
+        <h2 class="section-title">Experience</h2>
+        {%- for item in page.work %}
+        <article class="experience-box">
+            <header class="experience-box__title">
+                <h3>{{ item.company }}</h3>
+                <time class="experience-box__date">{{ item.date }}</time>
+            </header>
+
+            <div class="experience-box__description">
+                {{ item.description | markdownify }}
+            </div>
+
+            {%- for position in item.position %}
+                <div class="experience-box__position">
+                    <h4 class="experience-box__position-title">
+                        {{ position.title }}
+                    </h4>
+                    <div class="experience-box__achievements">
+                        {{ position.achievements | markdownify }}
+                    </div>
+                </div>
+            {% endfor %}
+
+            {%- if item.tech-stack %}
+            <p>
+            <strong>Stack:</strong> {%-for tech in item.tech-stack %} <span class="tag">{{ tech }}</span>{% endfor %}
+            </p>
+            {% endif %}
+        </article>
+    {% endfor %}
+
+    </section>
+
+    <section id="page-education">
+        <h2 class="section-title">Education</h2>
+        {% for school in page.school %}
+            <article class="education-box">
+                <header class="education-box__title">
+                    <h3>
+                        {{school.name}}
+                    </h3>
+                    <time class="education-box__date">{{school.date}}</time>
+                </header>
+                <div class="experience-box__achievements">
+
+                    {{school.description | markdownify }}
+                    {{school.achievements | markdownify }}
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+
+{% include footer.liquid %}

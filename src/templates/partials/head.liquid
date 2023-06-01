@@ -1,0 +1,12 @@
+<!DOCTYPE html lang="en-CA">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jan Drewniak - UX Engineering</title>
+		<link rel="stylesheet" href="./assets/styles/fonts.css">
+		{%- assign styles = include.styles | split: ", " -%}
+		{% for style in styles %}
+		<link rel="stylesheet" href="./assets/styles/{{ style | strip  }}">
+		{% endfor %}
+	</head>
+	<body>
