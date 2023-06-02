@@ -1,15 +1,7 @@
 title: Jan Drewniak
 description: UX Engineering
 repository: jandre3000/jandrewniak.com
-source: src
-destination: docs
-layouts_dir: templates
-plugins_dir: plugins
-includes_dir: templates/partials
-data_dir: data
 timezone: Canada/Toronto
-sass:
-  style: compressed
 defaults:
   layout: default
   author: Jan Drewniak

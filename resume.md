@@ -36,17 +36,21 @@ work:
             -
                 title: Senior UX engineer - Web team
                 achievements: |
-                    Implemented a redesign of Wikipedia, developed multiple prototyping solutions,
-                    assisted in adopting Vue.js, wrote code that's scaled to billions of daily pageviews.
+                    Implemented a redesign of Wikipedia, developed multiple prototyping solutions that assisted design research and improved end-user adoption,
+                    helped adopt Vue.js, wrote maintainable front-end code that scales to billions of daily pageviews, lead the technical implementation of features
+                    within the redesign project and engaged team building through hiring, mentoring and onboarding efforts.
+
+                    #### Notable projects
+                    {: class="experience-box__position-title" }
 
                     - **Desktop Improvements Project** - *The first Wikipedia redesign in over a decade*.
                     Implemented new designs that improved the reading experience for a global audience. Worked to ensure the highest
                     quality maintainable code, taking into account semantics, accessibility, performance, i18n, and progressive enhancement.
 
-                    - **Wikipedia mobile** - Added features and maintained the mobile version of Wikipedia, which focuses on
+                    - **Wikipedia mobile** - *The m.wikipedia.org site*. Added features and maintained the mobile version of Wikipedia, which focuses on
                     performance and simplicity. Added tools and features to enable editing Wikipedia on mobile devices.
 
-                    - **Wikipedia Popups extension** - Implemented a Storybook instance to help provide a predictable
+                    - **Wikipedia Popups extension** - *The tooltips on Wikipedia links*. Implemented a Storybook.js instance to help provide a predictable
                     development environnement for a broad range of test-cases for this feature.
             -
                 title: UX engineer - Discovery team

@@ -37,6 +37,16 @@ body {
     .page-title {
         padding-top: 0px;
     }
+
+    article.experience-box {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    article.experience-box * {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }
 
 @page {
