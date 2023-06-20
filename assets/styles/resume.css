@@ -94,6 +94,16 @@ h3 {
     margin: 0;
 }
 
+#page-address a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#page-address a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     margin-top: 0;
 }
@@ -239,6 +249,7 @@ p {
     font-size: 1rem;
     flex-grow: 0;
     text-align: right;
+    opacity: 0.5;
 }
 
 @media print {

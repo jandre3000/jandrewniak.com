@@ -3,7 +3,7 @@ layout: resume
 title: Jan Drewniak | UX Engineer | C.V.
 name: Jan Drewniak
 address: |
-    Cambridge ON. Canada • https://jandrewniak.com
+    Cambridge ON. Canada • [https://jandrewniak.com](https://jandrewniak.com)
 website:
 summary: |
     UX isn't just about the visuals. Ask yourself: How does your product look in right-to-left languages? Is it WCAG compliant?
@@ -16,9 +16,9 @@ skills: |
     - Internationalization
     - Javascript frameworks (Vue.js, React etc.)
     - Open-source development
-    - browser networking & performance
+    - Unit, integration, visual regression testing
 
-    ### Product & Design
+    ### Product & UI
     - UI pattern libraries
     - Prototyping & user research
     - Analytics & instrumentation
@@ -28,7 +28,7 @@ skills: |
 work:
     -
         company: Wikimedia Foundation
-        date: 2015 - present
+        date: Oct 2015 - present · 7 yrs 9 mos
         icon: ./images/wikimedia-logo.webp
         description: |
             The non-profit responsible for maintaining Wikipedia and related projects.
@@ -37,7 +37,7 @@ work:
                 title: Senior UX engineer - Web team
                 achievements: |
                     Implemented a redesign of Wikipedia, developed multiple prototyping solutions that assisted design research and improved end-user adoption,
-                    helped adopt Vue.js, wrote maintainable front-end code that scales to billions of daily pageviews, lead the technical implementation of features
+                    helped adopt Vue.js, wrote maintainable front-end code that scales to billions of daily page-views, lead the technical implementation of features
                     within the redesign project and engaged team building through hiring, mentoring and onboarding efforts.
 
                     #### Notable projects
@@ -51,7 +51,7 @@ work:
                     performance and simplicity. Added tools and features to enable editing Wikipedia on mobile devices.
 
                     - **Wikipedia Popups extension** - *The tooltips on Wikipedia links*. Implemented a Storybook.js instance to help provide a predictable
-                    development environnement for a broad range of test-cases for this feature.
+                    development environment for a broad range of test-cases for this feature.
             -
                 title: UX engineer - Discovery team
                 achievements: |
@@ -69,7 +69,7 @@ work:
             - Storybook.js
     -
         company: Peerio Technologies
-        date: 2015
+        date: Aug 2015 - Oct 2015 · 3 mos
         description: |
             A Montreal-based startup building a privacy-first, end-to-end encrypted mobile chat app.
         position:
@@ -83,7 +83,7 @@ work:
             - Javascript cryptography
     -
         company: Blue State Digital
-        date: 2015
+        date: Jul 2014 - Jul 2015 · 1 yr 1 mo
         description: |
             A digital marketing agency helping progressive organizations and political parties fund raise and build their online presence.
         position:
@@ -97,7 +97,7 @@ work:
             - Sass
     -
         company: Algrin technologies
-        date: 2009-2014
+        date: Aug 2009 - Mar 2014 · 4 yrs 8 mos
         description: |
             A Toronto-based start-up building scheduling products for service-sector businesses.
         position:
@@ -108,17 +108,16 @@ work:
         tech-stack:
             - Angular.js
             - jQuery
-            - Ruy on Rails
+            - Ruby on Rails
     -
         company: Smith Roberts Creative Communications
-        date: 2007-2008
+        date: Mar 2007 - Oct 2008 · 8 mon
         icon: ./images/sm-logo.ico
         description: |
             An award-winning Toronto based advertising agency, serving local & national clients.
         position:
             -
                 title: Jr. Art Director
-                date: Dec 2007 - Apr 2008 (8 months)
                 achievements: |
                     Produced print and web advertising campaigns for a series of local clients,
                     ranging from art galleries, colleges, and even churches.
@@ -133,8 +132,8 @@ school:
         description: Bachelor of Design - Advertising and Art Direction
         achievements: |
             - 2008 - Internship: Mobile Digital Commons Network Conference.
-            - 2008 - Award: Art Directors Club of Canada - Gold (Student category)
-            - 2007 - Award: Marketing Magazine - Silver (Student category)
+            - 2008 - Award: Art Directors Club of Canada - Gold 🏅 (Student category)
+            - 2007 - Award: Marketing Magazine - Silver 🥈 (Student category)
 blurbs: |
   ### Skills
 
