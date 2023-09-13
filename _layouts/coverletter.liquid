@@ -1,0 +1,19 @@
+{% include head.liquid styles="layouts/coverletter.css" %}
+
+    <h1 class="page-title">Jan <br/>Drewniak</h1>
+    <h2 class="page-subtitle" contenteditable="true">
+        {{ page.address | markdownify }}
+        {{ page.contact  | markdownify }}
+    </h2>
+
+    <main contenteditable="true">
+        {{ content | markdownify }}
+    </main>
+    <aside>
+    <p>
+    Thanks, <br/>
+    Jan Drewniak
+    </p>
+        <img style="width:200px;" src="/assets/images/signature.svg">
+    </aside>
+{% include footer.liquid %}

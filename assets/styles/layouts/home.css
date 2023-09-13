@@ -6,14 +6,13 @@
     --content-padding-vertical: 30px;
     --content-padding-horizontal: 50px;
     /* Typography */
-    --font-size-title: 100px;
+    --font-size-title: 140px;
     --font-size-smallcap: 42px;
     --font-size-subhead: 24px;
     --font-size-subhead-2: 18px;
-    --font-size-content: 17px;
+    --font-size-content: 21px;
     --font-size-small: 14px;
     --line-height-content: 1.7;
-    --line-height-heading: ;
 
     /* Colors */
     --color-background: rgb(244, 242, 241);
@@ -36,14 +35,14 @@
     --border-radius: 2px;
 
     /* Matter.js */
-    --content-width: 600px;
+    --content-width: 720px;
     --content-height: 140vh;
-    --heading-line-1-y: 200px;
-    --heading-line-2-y: 300px;
-    --heading-line-3-y: 420px;
-    --heading-line-4-y: 470px;
-    --heading-line-5-y: 500px;
-    --heading-offset: 35vw;
+    --heading-line-1-y: 150px;
+    --heading-line-2-y: 280px;
+    --heading-line-3-y: 500px;
+    --heading-line-4-y: 550px;
+    --heading-line-5-y: 600px;
+    --heading-offset: 40vw;
 }
 
 body {
@@ -268,7 +267,7 @@ body {
     height: 100%;
     display: inline-block;
     border: 1px solid #333;
-    background: #ffe2e2 url(../images/Speaker_Icon.svg );
+    background: #ffe2e2 url(../../images/Speaker_Icon.svg );
     background-size:70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -283,14 +282,14 @@ body {
     display: inline-block;
     border: 1px solid #333;
     transform: translate(2px, -2px);
-    background: #ffe2e2 url(../images/Pause_icon.svg );
+    background: #ffe2e2 url(../../images/Pause_icon.svg );
     background-size:70%;
     background-repeat: no-repeat;
     background-position: center;
   }
 
 .wikipedia-icon {
-    background-image: url(../images/wikipedia-icon.svg);
+    background-image: url(../../images/wikipedia-icon.svg);
     background-size: 100%;
     width: 1.3em;
     height: 1.3em;
@@ -332,7 +331,7 @@ body {
   =============== */
 .portrait {
     background-size: 300px auto;
-    background-image: url(/assets/images/pxArt.png);
+    background-image: url(../../images/pxArt.png);
     height: 170px;
     width: 140px;
     background-repeat: no-repeat;

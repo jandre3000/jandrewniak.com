@@ -1,4 +1,4 @@
-{% include head.liquid styles="resume.css" %}
+{% include head.liquid styles="layouts/resume.css" %}
 
     <h1 class="page-title">Jan <br/>Drewniak</h1>
 
@@ -11,14 +11,14 @@
         <!-- {{ page.summary | markdownify}} -->
     </section>
 
-    <section id="page-skills">
+    <section id="page-skills" contenteditable="true">
         <h2 class="section-title">Skills</h2>
         <div class="page-skills-content">
             {{ page.skills | markdownify}}
         </div>
     </section>
 
-    <section id="page-experience">
+    <section id="page-experience" contenteditable="true">
         <h2 class="section-title">Experience</h2>
         {%- for item in page.work %}
         <article class="experience-box">
@@ -52,7 +52,7 @@
 
     </section>
 
-    <section id="page-education">
+    <section id="page-education" contenteditable="true">
         <h2 class="section-title">Education</h2>
         {% for school in page.school %}
             <article class="education-box">
