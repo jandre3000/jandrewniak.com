@@ -3,10 +3,13 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Jan Drewniak - UX Engineering</title>
-		<link rel="stylesheet" href="./assets/styles/fonts.css">
+		<link rel="stylesheet" href="/assets/styles/fonts.css">
+		<link rel="stylesheet" href="/assets/styles/variables.css">
+		<link rel="stylesheet" href="/assets/styles/base.css">
+		<link rel="stylesheet" href="/assets/styles/layouts/{{page.layout}}.css">
 		{%- assign styles = include.styles | split: ", " -%}
 		{% for style in styles %}
-		<link rel="stylesheet" href="./assets/styles/{{ style | strip  }}">
+		<link rel="stylesheet" href="/assets/styles/{{ style | strip  }}">
 		{% endfor %}
 	</head>
-	<body>
+	<body class="layout-{{ page.layout }}">

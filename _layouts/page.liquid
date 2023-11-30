@@ -1,0 +1,31 @@
+{% include head.liquid %}
+
+<nav class="layout-page__nav">
+<ul>
+    <li>
+        <a href="home">Home</a>
+    </li>
+</ul>
+</nav>
+
+
+<main class="layout-page__content">
+    <article class="layout-content">
+        <h1 class="layout-content__header content-title">
+            {{page.title}}
+        </h1>
+        <aside class="layout-content__tags content-tags">
+            {% for tag in page.tags %} <a href="#">{{tag}}</a> {% endfor %}
+        </aside>
+
+    <div class="layout-content__body content-body">
+    {{content}}
+    </div>
+
+    </article>
+</main>
+
+<footer class="layout-page__footer site-footer">
+    <small> This is the footer </small>
+</footer>
+{% include footer.liquid %}

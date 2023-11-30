@@ -16,7 +16,7 @@ I'm currently focused on building the first [Wikipedia redesign](https://www.med
 
 In the past I've gone to art school 🎨, worked in advertising, start-ups, digital agencies and lived in Poland 🇵🇱 for 11 years.
 
-Nowadays, when I'm *not* in front of my computer, I might be riding my bike 🚲, trying to winter-proof my century home 🏠 or occasionally parenting 👨‍👩‍👧‍👧.
+When I'm not in front of my computer, I might be riding my bike 🚲, trying to winter-proof my century home 🏠 or occasionally parenting 👨‍👩‍👧‍👧.
 
 
 * [Github](https://github.com/jandre3000){: #github.button-link}

@@ -1,7 +1,7 @@
 /* Variables
   ========== */
 
-:root {
+.layout-home {
     /* Sizing */
     --content-padding-vertical: 30px;
     --content-padding-horizontal: 50px;
@@ -14,26 +14,6 @@
     --font-size-small: 14px;
     --line-height-content: 1.7;
 
-    /* Colors */
-    --color-background: rgb(244, 242, 241);
-    --color-background-invert: #353333;
-    --color-background-content: #fff;
-    --color-text: #353333;
-    --color-text-invert: #fff;
-    --color-text-highlight: rgb(255 241 189);
-    --color-link-border: #4d8b6e;
-    --color-link: #bc4ea5;
-    --color-link-highlight: #01bfc2;
-    --color-theme-1: #709d88;
-    --color-theme-2: #506788;
-    --color-theme-3: #cc5f5c;
-    --color-theme-4: #d5a053;
-
-    /* Theme */
-    --drop-shadow-level-1: 0px 3px 4px rgba(0,0,0, 0.1);
-    --drop-shadow-level-2: 0px 5px 10px -2px rgba(0,0,0,0.1);
-    --border-radius: 2px;
-
     /* Matter.js */
     --content-width: 720px;
     --content-height: 140vh;
@@ -43,15 +23,6 @@
     --heading-line-4-y: 550px;
     --heading-line-5-y: 600px;
     --heading-offset: 40vw;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    color: var(--color-text);
-    background-color: var(--color-background);
 }
 
 #debug {

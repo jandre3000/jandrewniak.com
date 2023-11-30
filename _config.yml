@@ -2,6 +2,19 @@ title: Jan Drewniak
 description: UX Engineering
 repository: jandre3000/jandrewniak.com
 timezone: Canada/Toronto
+exclude:
+ - /docker-compose.yml
+ - Gemfile
+ - Gemfile.lock
+ - CNAME
+ - README.md
 defaults:
-  layout: default
+  layout: page
   author: Jan Drewniak
+collections:
+  content:
+    output: true
+    permalink: /:path
+  drafts:
+    output: false
+    permalink: /:collection/:path
