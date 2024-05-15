@@ -193,7 +193,7 @@
     cursor: pointer;
     color: white;
     font: bold var( --font-size-medium) inherit;
-    background: url(../../images/Speaker_icon.svg) no-repeat 0.5rem center / 1.5rem var(--color-link-highlight);
+    background: url(../../images/icon-speaker.svg) no-repeat 0.5rem center / 1.5rem var(--color-link-highlight);
     padding: 0.5rem 1rem 0.5rem 2.5rem;
     box-shadow: 4px 4px 0px var(--color-link);
 }
@@ -204,11 +204,11 @@
 }
 
 .pronounce-button.pause {
-    background-image: url(../../images/Pause_icon.svg);
+    background-image: url(../../images/icon-pause.svg);
 }
 
 .wikipedia-icon {
-    background: url(../../images/wikipedia-icon.svg) no-repeat center/100%;
+    background: url(../../images/icon-wikipedia.svg) no-repeat center/100%;
     width: 1.3em;
     height: 1.3em;
     display: inline-block;
