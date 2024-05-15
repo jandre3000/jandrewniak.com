@@ -13,9 +13,17 @@
     --color-text-highlight: rgb(255 241 189);
     --color-link: #bc4ea5;
     --color-link-highlight: #01bfc2;
-
     /* Theme */
     --drop-shadow-level-1: 0px 3px 4px rgba(0,0,0, 0.1);
     --drop-shadow-level-2: 0px 5px 10px -2px rgba(0,0,0,0.1);
     --border-radius: 2px;
+    /* Typography */
+    --font-size-x-small: calc( 12rem / 16 );
+    --font-size-small:  calc( 14rem / 16 );
+    --font-size-medium: calc( 18rem / 16 );
+    --font-size-large: calc( 24rem / 16 );
+    --font-size-x-large: calc( 36rem / 16 );
+    --font-size-xx-large: calc( 42rem / 16 );
+    --font-size-jumbo: calc( 120rem / 16 );
+    --line-height-medium: 1.7;
 }

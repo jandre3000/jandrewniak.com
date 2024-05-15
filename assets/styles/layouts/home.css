@@ -5,15 +5,6 @@
     /* Sizing */
     --content-padding-vertical: 30px;
     --content-padding-horizontal: 50px;
-    /* Typography */
-    --font-size-title: 140px;
-    --font-size-smallcap: 42px;
-    --font-size-subhead: 24px;
-    --font-size-subhead-2: 18px;
-    --font-size-content: 18px;
-    --font-size-small: 14px;
-    --line-height-content: 1.7;
-
     /* Matter.js */
     --content-width: 720px;
     --content-height: 140vh;
@@ -78,7 +69,7 @@
     display: block;
     will-change: transform;
     font-family: "Major Mono Display";
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-jumbo);
     font-weight: 200;
     line-height: var(--line-height-heading);
     height: 95px;
@@ -98,14 +89,14 @@
 .heading .tagline {
     font-family: "Operator Mono";
     font-weight:200;
-    font-size: var(--font-size-subhead);
+    font-size: var(--font-size-large);
     height: 30px;
     line-height: 1;
     transform:translate( calc(var(--heading-offset) + var(--n) ), var( --heading-line-3-y ) )
 }
 
 .heading .tagline.line-2, .heading .tagline.line-3 {
-    font-size: var(--font-size-subhead-2);
+    font-size: var(--font-size-medium);
 }
 
 .heading .tagline.line-2 {
@@ -128,7 +119,7 @@
     margin: 0 auto;
     font-family: "Operator Mono";
     line-height: 1.7;
-    font-size: var(--font-size-content);
+    font-size: var(--font-size-medium);
     z-index: 1;
     background-color: var(--color-background);
 }
@@ -140,19 +131,15 @@
     background-color: var(--color-background-content);
 }
 
-.small-cap {
-    position: absolute;
-    top: -60px;
-    left: max( -8vw, calc( -1 * var(--content-padding-horizontal) - 20px ) );
-    background-color: var(--color-background-invert);
-    color: var(--color-text-invert);
-    font-size: var(--font-size-smallcap);
-    font-weight: bold;
-    width: 1.5em;
-    height: 1.5em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.section-heading {
+    position: relative;
+    left: -5rem;
+    background-color: var( --color-link-highlight );
+    color: white;
+    font-size: var(--font-size-medium);
+    padding: 0.2rem 1.5rem;
+    display: inline-block;
+    margin: 0;
 }
 
 .content p {
@@ -198,75 +185,33 @@
     }
 }
 
-/* Pronounciation button
+/* Pronunciation button
    ===================== */
-#pronounce-button {
-    position: relative;
-    border: none;
-    cursor: pointer;
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0;
-    background: none;
-}
-
-#pronounce-button:after {
-    content: '';
+.pronounce-button {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-3px, 4px);
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 0;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    color: white;
+    font: bold var( --font-size-medium) inherit;
+    background: url(../../images/Speaker_icon.svg) no-repeat 0.5rem center / 1.5rem var(--color-link-highlight);
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    box-shadow: 4px 4px 0px var(--color-link);
 }
 
-#pronounce-button:hover .play {
-    transform: translate(2px, -2px);
+.pronounce-button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px var(--color-link);
 }
 
-#pronounce-button:hover:after {
-    transform: translate(-3px, 4px);
+.pronounce-button.pause {
+    background-image: url(../../images/Pause_icon.svg);
 }
-
-#pronounce-indicator.play {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    border: 1px solid #333;
-    background: #ffe2e2 url(../../images/Speaker_Icon.svg );
-    background-size:70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: text-bottom;
-  }
-
-  #pronounce-indicator.pause {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    border: 1px solid #333;
-    transform: translate(2px, -2px);
-    background: #ffe2e2 url(../../images/Pause_icon.svg );
-    background-size:70%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
 .wikipedia-icon {
-    background-image: url(../../images/wikipedia-icon.svg);
-    background-size: 100%;
+    background: url(../../images/wikipedia-icon.svg) no-repeat center/100%;
     width: 1.3em;
     height: 1.3em;
     display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
     vertical-align: sub;
 }
 
@@ -301,12 +246,9 @@
 /* Portrait image
   =============== */
 .portrait {
-    background-size: 300px auto;
-    background-image: url(../../images/pxArt.png);
+    background: url(../../images/pxArt.png) no-repeat -80px 0px/300px auto;
     height: 170px;
     width: 140px;
-    background-repeat: no-repeat;
-    background-position: -80px 0px;
     filter: contrast(1.2) brightness(1.2);
     position: relative;
     left: calc( -1 * var(--content-padding-horizontal) );
@@ -344,7 +286,7 @@ ul.button-links .button-link {
     :root {
         --content-width: 90vw;
         --heading-offset: 30vw; /*50vw*/
-        --font-size-content: 16px;
+        --font-size-medium: 16px;
         --content-padding-vertical: 10px;
         --content-padding-horizontal: 30px;
     }

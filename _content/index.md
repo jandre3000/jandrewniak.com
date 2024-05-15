@@ -2,21 +2,32 @@
 layout: home
 ---
 
-<span class="small-cap">Hi</span> I'm Jan <button aria-label="pronunciation" id="pronounce-button"><span id="pronounce-indicator" class="play"></span></button> <sup>[IPA: /jan ˈdrɛv.ɲak/]</sup> and
-I'm a web developer focused on UX and front-end.
-<audio id="pronounce-audio" src="./assets/audio/jan_drewniak.m4a"></audio>
+<h2 class="section-heading"> Hello there</h2>
 
-I live in Cambridge Ontario 🇨🇦 and I'm a senior software engineer on the [Web Team](https://www.mediawiki.org/wiki/Reading/Web) at the [Wikimedia Foundation](https://wikimediafoundation.org/) <i class="wikipedia-icon"></i>.
+I'm an UI engineer living in 🇨🇦 Cambridge Ontario. I work at the [Wikimedia
+Foundation](https://wikimediafoundation.org/) <i class="wikipedia-icon"></i>  on the [Web
+Team](https://www.mediawiki.org/wiki/Reading/Web). But, more importantly, this is how you pronounce my name:
+
+<button  id="pronounce-button" aria-label="pronunciation" class="pronounce-button">
+<span id="pronounce-indicator" class="play"></span>
+Jan Drewniak <sup>[IPA: /jan ˈdrɛv.ɲak/]</sup>
+</button>
+
+<audio id="pronounce-audio" src="./assets/audio/jan_drewniak.m4a"></audio>
 
 <span class="starburst">[The redesign of Wikipedia I've been working on is now live!](https://wikimediafoundation.org/news/2023/01/18/wikipedia-gets-a-fresh-new-look-first-desktop-update-in-a-decade-puts-usability-at-the-forefront//)</span>
 <mark>I specialize in</mark> ~~writing scalable & maintainable font-end code emphasizing semantics, performance, accessibility and internationalization~~ <mark>making cool stuff for the web</mark> 👾.
-I'm currently focused on building the first [Wikipedia redesign](https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements) in over a decade. I also work on Wikipedia's mobile site and maintain [this page](https://www.wikipedia.org).
+I recently finished working on the first [Wikipedia
+redesign](https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements) in
+over a decade, and right now I'm working on bringing dark-mode 🌚 to Wikipedia. I also maintain [the
+Wikipedia homepage](https://www.wikipedia.org).
 
+<h2 class="section-heading"> Still reading?</h2>
 
+In the distant past I've gone to art school 🎨, worked in advertising, start-ups, digital agencies and lived in Poland 🇵🇱 for 11 years.
 
-In the past I've gone to art school 🎨, worked in advertising, start-ups, digital agencies and lived in Poland 🇵🇱 for 11 years.
-
-When I'm not in front of my computer, I might be riding my bike 🚲, trying to winter-proof my century home 🏠 or occasionally parenting 👨‍👩‍👧‍👧.
+When I'm not in front of my computer, I might be riding my bike 🚲, trying to
+winter-proof my 100 year old home 🏠 or occasionally parenting 👧🏼👧🏻.
 
 
 * [Github](https://github.com/jandre3000){: #github.button-link}
